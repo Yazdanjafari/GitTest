@@ -122,3 +122,22 @@ ________________________________________________________________________________
 git push origin --tags
 ریموت یا پوش کردن همه ورژن ها
 __________________________________________________________________________________________________________
+نکته : باید در بش گیت زده شود
+ساخت کی یا امضا گیت
+gpg --list-keys 
+gpg --gen-key
+در اینجا باید یوزر پس ست شود
+gpg --list-secret-keys --keyid-format LONG
+
+از این قسمت :
+/c/Users/aaaa/.gnupg/pubring.kbx
+--------------------------------
+sec   rsa3072/D8B1AA27593EDA8F 2023-09-30 [SC] [expires: 2025-09-29]
+      D8BEDBD95A2F1C73B0D63574D8B1AA27593EDA8F
+uid                 [ultimate] Yazdan Jafari <yazdan10jr1@gmail.com>
+ssb   rsa3072/470186D5DF477BE3 2023-09-30 [E] [expires: 2025-09-29]
+
+این قسمت را بردارید :
+D8B1AA27593EDA8F
+
+git config --global user.singinkey D8B1AA27593EDA8F

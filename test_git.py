@@ -1,3 +1,4 @@
-print("Hello World")
-print("Hello Yazdan")
+def hi(name):
+    print(f"Hello {name}")
+hi("Yazdan")
 
